@@ -1,0 +1,254 @@
+body {
+    background-color:#CCF6FF;
+    padding: 0;
+    margin: 0;
+  }
+  
+  h1 {
+    color: #202023;
+    font-family: "Lucida Console", sans-serif;
+  }
+  
+  h2, h3 {
+    color: white;
+    font-family: "Lucida Console", sans-serif;
+  }
+  
+  h4, h5 {
+    color: #202023;
+    font-family: georgia, serif;
+  }
+  
+  p {
+    color: #202023;
+    font-family: georgia, serif;
+  }
+  
+  a {
+    color: #53A4FB;
+    font-family: georgia, serif;
+  }
+  
+  a:hover {
+    color:#5D72DF;
+  }
+  
+  .sitebox {
+    display: grid;
+  }
+  
+  .windowbox {
+    height: max-content;
+    background-color: white;
+    border: 3px solid #53A4FB;
+    border-radius: 3px;
+  }
+  
+  .topbar {
+    color: white;
+    background-color:#53A4FB;
+    border: 3px solid #53A4FB;
+    padding: 0px 15px 1.75vw;
+    margin: 0px;
+  }
+  
+  #url {
+    color: white;
+    font-family: "Lucida Console", sans-serif;
+  }
+  
+  .textbox {
+    margin: 30px;
+  }
+  
+  .navbar {
+    background-color:#53A4FB;
+    position: fixed;
+  }
+  
+  .navlinks a {
+    color:white;
+    font-family: "Lucida Console", sans-serif;
+    font-weight: bold;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* computer users hell yeah !!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  
+  @media screen and (min-width: 800px){
+    .sitebox {
+      grid-template-columns: 18% 9% 31% 4% 29% 2% 6%;
+      grid-template-rows: 7vw repeat(4, 250px) 4.75vw; 
+    }
+  
+    #projectssitebox.sitebox {
+      grid-template-rows: 7vw repeat(2, 280px) 1px 1px 4.75vw; 
+    }
+  
+    .navbar {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      height: 100vh;
+    }
+  
+    .windowbox {
+      grid-column-start: 3;
+      grid-column-end: 7;
+      grid-row-start: 2;
+    }
+  
+    #windowbox1 {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 2;
+    }
+  
+    #windowbox2 {
+      grid-column-start: 5;
+      grid-column-end: 7;
+      grid-row-start: 2;
+    }
+  
+    #windowbox3 {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 3;
+    }
+  
+    #windowbox4 {
+      grid-column-start: 5;
+      grid-column-end: 7;
+      grid-row-start: 3;
+    }
+  
+    #windowbox5 {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 4;
+    }
+  
+    #windowbox6 {
+      grid-column-start: 5;
+      grid-column-end: 7;
+      grid-row-start: 4;
+    }
+  
+    #windowbox7 {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 5;
+    }
+  
+    #windowbox8 {
+      grid-column-start: 5;
+      grid-column-end: 7;
+      grid-row-start: 5;
+    }
+  
+    #windowboxproj {
+      grid-column-start: 3;
+      grid-column-end: 7;
+      grid-row-start: 3;
+    }
+  
+    .topbar {
+      height: 1.6vw;
+    }
+  
+    #assignpng.windowbox {
+      grid-column-start: 3;
+      grid-column-end: 4;
+    }
+    
+    #projpng.windowbox {
+      grid-column-start: 5;
+      grid-column-end: 7;
+    }
+  
+    #icon {
+      width: 20vw;
+    }
+    
+    .navlinks {
+      padding: 0px 2.5vw;
+      grid-row-start: 3;
+    }
+  
+    #iconsimg {
+      height: 3vw;
+    }
+  
+    ul {
+      line-height: 3.5vw;
+    }
+  
+    li {
+      font-size: 2vw;
+    }
+  
+    #url {
+      font-size: 1.3vw;
+    }
+  
+  }
+  
+  /* mobile users yikes :(((((((((((( frown */
+  
+  @media screen and (max-width: 800px){
+    .sitebox {
+      grid-template-columns: 10% 75% 5% 10%;
+      grid-template-rows: 10vw 7vw 90vw; 
+    }
+  
+    .navbar {
+      grid-column-start: 1;
+      grid-column-end: 5;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      height: 60px;
+      width: 100vw;
+    }
+  
+    #icon {
+      width: 0px;
+    }
+  
+    .windowbox {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 3;
+    }
+  
+    .topbar {
+      height: 5vw;
+    }
+    
+    #projpng.windowbox {
+      grid-row-start: 4;
+    }
+  
+    #iconsimg {
+      height: 6vw;
+    }
+  
+    ul {
+      width:fit-content;
+      margin:auto;
+    }
+  
+    li {
+      display: inline-block;
+      font-size: 20px;
+      padding: 0 5px;
+    }
+  
+    #url {
+      font-size: 2.5vw;
+    }
+  
+  }
