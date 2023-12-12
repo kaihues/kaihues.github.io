@@ -7,6 +7,7 @@
 <meta name="viewport" content ="width=device-width">
 <title>kaihues | contact</title>
 <script defer src="script.js"></script>
+<script defer src="contact.js"></script>
 <link rel="stylesheet" href="style.css">
 
 </head>
@@ -23,7 +24,7 @@
             </div>
         </div>
 
-        <div class="windowbox fullbox">
+        <div class="windowbox halfbox1">
             <div class="topbar">
                 <div class="windowicons">
                     <img class="iconsimg" src="./images/topbar-icons.png" align="right">
@@ -32,8 +33,39 @@
             </div>
 
             <div class="textbox">
-                <p> do not contact me !!</p>
+                
+                <form id="message">
+                    <ul id="emailform">
+                        <li>
+                        <label for="email">your email address:</label>
+                        <input id="email" type="text" name="email">
+                        </li>
+            
+                        <li>
+                        <label for="subject">subject:</label>
+                        <input id="subject" type="text" name="subject">
+                        </li>
+            
+                        <li>
+                        <label for="messagetxt">your message:</label>
+                        <textarea id="messagetxt" name="messagetxt"></textarea>
+                        </li>
+                    </ul>
+                </form>
+                <button class = "basicbutton" type="submit" form="message" value="Submit">send your message!</button>
+                
             </div>
+        </div>
+
+        <div class = "windowbox halfbox2">
+            <div class="topbar">
+                <div class="windowicons">
+                    <img class="iconsimg" src="./images/topbar-icons.png" align="right">
+                </div>
+                <h3 class="url">messages.png</h3>
+            </div>
+
+            <img id = "contactclick" src = "images/click-letter.png">
         </div>
 
     </div>
