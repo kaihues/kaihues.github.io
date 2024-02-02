@@ -132,10 +132,28 @@ body {
     object-fit: contain;
   }
 
+  .textbox .largeimg {
+    width: 80%;
+    object-fit: contain;
+    margin: 10px auto;
+  }
+
   .imgbox img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+  }
+
+  .doubleimgbox {
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+    column-gap: 20px;
+  }
+
+  .doubleimgbox img {
+    width: 39%;
+    margin: 10px 0px;
   }
 
   label {
