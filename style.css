@@ -154,7 +154,7 @@ body {
   }
 
   .doubleimgbox img {
-    height: 60vh;
+    max-height: 60vh;
     max-width: 45%;
     margin: 10px 0px;
     object-fit: contain;
@@ -172,6 +172,11 @@ body {
     font-family: georgia, serif;
     padding: 0;
     margin: 0;
+  }
+
+  iframe {
+    width: 100%;
+    align-self: center;
   }
   
   /* computer users hell yeah !!!!!!!!!!!!!!!!!!!!!!!!!!!! */
