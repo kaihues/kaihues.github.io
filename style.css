@@ -365,7 +365,7 @@ body {
       grid-column-end: 4;
       grid-row-start: 1;
       grid-row-end: 2;
-      height: 60px;
+      height: 45px;
       width: 100vw;
     }
   
@@ -376,7 +376,7 @@ body {
   
     .windowbox {
       grid-column-start: 2;
-      grid-column-end: 4;
+      grid-column-end: 3;
       grid-row-start: 3;
     }
   
@@ -396,7 +396,7 @@ body {
     .navlinks li {
       display: inline-block;
       font-size: 20px;
-      padding: 0 5px;
+      padding: 5px 5px;
     }
   
     .url {
@@ -409,6 +409,16 @@ body {
       margin-bottom: 30px;
     }
 
+    .portfolioimg {
+      height: 180px;
+      width: 180px;
+    }
+
+    .imgbox {
+      height: 145px;
+      width: 180px;
+    }
+
     .portfoliotopbar {
       height: 20px;
       font-size: 10.5px;
@@ -418,6 +428,43 @@ body {
     .portfoliotopbarimg {
       height: 20px;
       margin-top: 3px;
+    }
+
+    #clickmessagebox {
+      display: none;
+    }
+
+    #message {
+      list-style-type: none;
+      margin: 0 0 30px 0;
+      padding: 0;
+      line-height: 2.5vw;
+    }
+  
+    #emailform label {
+      font-size: 3vw;
+      margin-bottom: 8px;
+    }
+  
+    #emailform input, #emailform textarea{
+      width: 73vw;
+      box-sizing: border-box;
+      padding: 7px 5px;
+      border-radius: 5px;
+      border-width: 1px;
+    }
+  
+    #emailform textarea {
+      vertical-align: text-top;
+      height: 7em;
+    }
+
+    #sendemailbutton {
+      margin: auto;
+    }
+
+    #emailform li {
+      margin-bottom: 25px;
     }
   
   }
