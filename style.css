@@ -36,6 +36,8 @@ body {
   
   .sitebox {
     display: grid;
+    height: 100vh;
+    position: relative;
   }
 
   .noline {
@@ -51,6 +53,7 @@ body {
 
   .textbox {
     display: grid;
+    margin: 30px;
   }
   
   .topbar {
@@ -64,10 +67,6 @@ body {
   .url {
     color: white;
     font-family: "Lucida Console", sans-serif;
-  }
-  
-  .textbox {
-    margin: 30px;
   }
   
   .navbar {
@@ -107,7 +106,7 @@ body {
   }
 
   .backbutton {
-    margin: 0 auto 30px;
+    margin: 0px auto 30px;
     background-color: #53A4FB;
     color: white;
     padding: 10px 15px;
@@ -126,6 +125,10 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+  }
+
+  .fullbox {
+    display: grid;
   }
 
   .fullbox .textbox .fullimg {
@@ -178,6 +181,7 @@ body {
     width: 100%;
     align-self: center;
   }
+
   
   /* computer users hell yeah !!!!!!!!!!!!!!!!!!!!!!!!!!!! */
   
@@ -192,7 +196,7 @@ body {
     }
 
     p {
-      font-size: 1.05vw;
+      font-size: 1.1vw;
     }
 
     .portfoliobox {
@@ -207,7 +211,6 @@ body {
       content: "";
       flex-basis: 250px;
       height: 250px;
-      margin-bottom: 7vw;
     }
   
     .navbar {
@@ -237,9 +240,9 @@ body {
     }
 
     .fullbox {
+      grid-row-start: 2;
       grid-column-start: 3;
       grid-column-end: 6;
-      display: grid;
     }
   
     .icon {
@@ -348,6 +351,14 @@ body {
       grid-template-rows: 10vw 7vw 90vw; 
     }
 
+    .backbutton {
+      font-size: 2vw;
+    }
+
+    p {
+      font-size: 2vw;
+    }
+
     .portfoliobox {
       grid-row-start: 3;
       grid-column-start: 2;
@@ -373,8 +384,8 @@ body {
       width: 0px;
       display: none;
     }
-  
-    .windowbox {
+
+    .fullbox {
       grid-column-start: 2;
       grid-column-end: 3;
       grid-row-start: 3;
@@ -428,6 +439,12 @@ body {
     .portfoliotopbarimg {
       height: 20px;
       margin-top: 3px;
+    }
+
+    #contactmessagebox {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 3;
     }
 
     #clickmessagebox {
