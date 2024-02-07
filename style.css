@@ -182,6 +182,12 @@ body {
     align-self: center;
   }
 
+  .footer { 
+    background-color: #CCF6FF;
+    height: 7vw;
+    margin: auto;
+}
+
   
   /* computer users hell yeah !!!!!!!!!!!!!!!!!!!!!!!!!!!! */
   
@@ -189,6 +195,12 @@ body {
     .sitebox {
       grid-template-columns: 18% 9% 31% 4% 31% 6%;
       grid-template-rows: 7vw 10vw 4.75vw; 
+    }
+
+    .contentwrapper {
+      grid-column-start: 3;
+      grid-column-end: 6;
+      grid-row-start: 2;
     }
 
     .backbutton {
@@ -211,6 +223,7 @@ body {
       content: "";
       flex-basis: 250px;
       height: 250px;
+      margin-bottom: 7vw;
     }
   
     .navbar {
@@ -351,6 +364,12 @@ body {
       grid-template-rows: 10vw 7vw 90vw; 
     }
 
+    .contentwrapper {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 3;
+    }
+
     .backbutton {
       font-size: 2vw;
     }
@@ -369,6 +388,7 @@ body {
     .portfoliobox::after {
       content: "";
       flex-basis: 180px;
+      margin-bottom: 7vw;
     }
   
     .navbar {
