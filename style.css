@@ -177,16 +177,19 @@ body {
     margin: 0;
   }
 
-  iframe {
-    width: 100%;
-    align-self: center;
-  }
-
   .footer { 
     background-color: #CCF6FF;
     height: 7vw;
     margin: auto;
-}
+  }
+
+  .timestamp {
+    font-family: "Lucida Console", sans-serif;
+    font-size: 1vw;
+    text-align: right;
+    color: rgb(155, 157, 167);
+    margin: 0px;
+  }
 
   
   /* computer users hell yeah !!!!!!!!!!!!!!!!!!!!!!!!!!!! */
