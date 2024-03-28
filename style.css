@@ -222,13 +222,14 @@ body {
       height: max-content;
     }
 
+    /**
     .portfoliobox::after {
       content: "";
       flex-basis: 250px;
       height: 250px;
-      margin-bottom: 7vw;
     }
-  
+    **/
+    
     .navbar {
       grid-column-start: 1;
       grid-column-end: 2;
