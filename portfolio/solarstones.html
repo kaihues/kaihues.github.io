@@ -8,17 +8,20 @@
 <title>kaihues | portfolio</title>
 <script defer src="../script.js"></script>
 <link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 </head>
 <body>
     <div class="sitebox">
         <div class="navbar">
-            <img class="icon" src="../images/click-logo.png" align = 'center'>
+            <img class="icon" src="../images/click-logo2.png" align = 'center'>
             <div class="navlinks">
                 <ul>
-                    <li><a href="../index.html">home</a></li>
-                    <li><a href="../portfolio.html">portfolio</a></li>
-                    <li><a href="../contact.html">contact</a></li>
+                    <li><div id="smallbar"></div></li>
+                    <li class = "grow"><a href="../index.html"><i class = "fa fa-home"></i>home</a></li>
+                    <li class = "grow"><a href="../portfolio.html"><i class = "fa fa-paint-brush"></i>portfolio</a></li>
+                    <li class = "grow"><a href="../contact.html"><i class = "fa fa-envelope"></i>contact</a></li>
+                    <li><div id="smallbar"></div></li>
                 </ul>
             </div>
         </div>
@@ -27,10 +30,10 @@
 
         <div class="windowbox fullbox">
             <div class="topbar">
-                <div class="windowicons">
-                    <img class="iconsimg" src="../images/topbar-icons.png" align="right">
+                <div class="windowicons" align="right">
+                    <i class = "fa fa-minus"></i><i class = "far fa-window-restore"></i><i class = "fa fa-times"></i>
                 </div>
-                <h3 class="url">solar-stones.stl</h3>
+                
             </div>
 
             <div class="textbox portfoliodesc">
@@ -42,15 +45,21 @@
                 <img class = "fullimg" src = "../images/scissors-grey.png">
                 <br>
 
+                <img class = "fullimg" src = "./images/solarstones-banner.png">
+
                 <div class = "doubleimgbox">
                     <img src = "./images/solar-1.PNG">
                     <img src = "./images/solar-2.png">
                 </div>
 
-                <p>Solar Stones is a collaborative project between a team based in Boulder, CO, FISKE planetarium
-                    on CU Boulder campus, the SouthWest Research Institute, and NASA. The Boulder team 
-                    is managed by Kai Hughes, who reports to FISKE and NASA directly.
+                <p>Solar Stones is a collaborative project between a team of fabrication 
+                    specialists, NASA, the SouthWest Research Institute, and FISKE 
+                    Planetarium. It is part of the NASA 
+                    PUNCH mission's outreach program. 
                 </p>
+
+                <p><a class="noline" href="https://punch.space.swri.edu/punch_outreach_3D-prints.php">
+                    The 3D model files can be viewed and downloaded here, on the PUNCH website.</a></p>
 
                 <br>
                 <img class = "fullimg" src = "./images/history.png">
@@ -103,8 +112,9 @@
                     of native astronomy more accessible to the public, including blind and 
                     low vision learners.
                     Our replicated carvings are being used in a larger project centered 
-                    around the study of the sun, in collaboration with NASA's PUNCH team, 
-                    SouthWest Research Institute, and FISKE planetarium.</p>
+                    around the study of the sun, NASA's PUNCH mission. Their outreach effort
+                    focuses on comparing how people of the past studied the sun with how
+                    we, in the modern age, do the same.</p>
 
                 <img class = "fullimg" src = "../images/scissors-grey.png">
             </div>

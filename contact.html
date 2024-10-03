@@ -9,64 +9,65 @@
 <script defer src="script.js"></script>
 <script defer src="contact.js"></script>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 </head>
 <body>
     <div class="sitebox">
         <div class="navbar">
-            <img class="icon" src="./images/click-logo.png" align = 'center'>
+            <img class="icon" src="./images/click-logo2.png" align = 'center'>
             <div class="navlinks">
                 <ul>
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="portfolio.html">portfolio</a></li>
-                    <li><a href="contact.html">contact</a></li>
+                    <li><div id="smallbar"></div></li>
+                    <li class = "grow"><a href="index.html"><i class = "fa fa-home"></i>home</a></li>
+                    <li class = "grow"><a href="portfolio.html"><i class = "fa fa-paint-brush"></i>portfolio</a></li>
+                    <li class = "grow"><a href="contact.html"><i class = "fa fa-envelope"></i>contact</a></li>
+                    <li><div id="smallbar"></div></li>
                 </ul>
             </div>
         </div>
 
-        <div class="windowbox halfbox1" id = "contactmessagebox">
+        <div class="windowbox fullbox" id = "contactmessagebox">
             <div class="topbar">
-                <div class="windowicons">
-                    <img class="iconsimg" src="./images/topbar-icons.png" align="right">
+                <div class="windowicons" align="right">
+                    <i class = "fa fa-minus"></i><i class = "far fa-window-restore"></i><i class = "fa fa-times"></i>
                 </div>
-                <h3 class="url">contact.txt</h3>
+                
             </div>
 
             <div class="textbox" id = "emailbox">
-                
-                <form id="message">
-                    <ul id="emailform">
-                        <li>
-                        <label for="email">your email address:</label>
-                        <input id="email" type="text" name="email">
-                        </li>
-            
-                        <li>
-                        <label for="subject">subject:</label>
-                        <input id="subject" type="text" name="subject">
-                        </li>
-            
-                        <li>
-                        <label for="messagetxt">your message:</label>
-                        <textarea id="messagetxt" name="messagetxt"></textarea>
-                        </li>
-                    </ul>
-                </form>
-                <button id = "sendemailbutton" class = "basicbutton" type="submit" form="message" value="Submit">send your message!</button>
-                
-            </div>
-        </div>
+                <div class = "doubletxtbox">
 
-        <div class = "windowbox halfbox2" id = "clickmessagebox">
-            <div class="topbar">
-                <div class="windowicons">
-                    <img class="iconsimg" src="./images/topbar-icons.png" align="right">
+                    <div class = "halfbox">
+                
+                        <form id="message">
+                            <ul id="emailform">
+                                <li>
+                                <label for="email">your email address:</label>
+                                <input id="email" type="text" name="email">
+                                </li>
+                    
+                                <li>
+                                <label for="subject">subject:</label>
+                                <input id="subject" type="text" name="subject">
+                                </li>
+                    
+                                <li>
+                                <label for="messagetxt">your message:</label>
+                                <textarea id="messagetxt" name="messagetxt"></textarea>
+                                </li>
+                            </ul>
+                        </form>
+                        <button id = "sendemailbutton" class = "basicbutton" type="submit" form="message" value="Submit">send your message!</button>
+                    </div>
+
+                    <img id = "clickcontactimg" class = "halfbox" src = "./images/click-letter.png">
+
                 </div>
-                <h3 class="url">messages.png</h3>
             </div>
-
-            <img id = "contactclick" src = "images/click-letter.png">
         </div>
+
+        
 
     </div>
 </body>
