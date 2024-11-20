@@ -381,6 +381,11 @@ body {
       font-size: 13px;
     }
 
+    #ssbanner {
+      width: 92%;
+      margin: auto;
+    }
+
     #contactclick {
       width: 20vw;
       margin: 30px auto;
